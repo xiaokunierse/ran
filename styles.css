@@ -9,12 +9,15 @@ body {
 }
 
 .container {
+
     text-align: center;
+
 }
 
 .seat-group {
+    
     display: inline-block;
-    margin: 20px;
+    margin: 32px;
 }
 
 .seats {
@@ -24,8 +27,8 @@ body {
 }
 
 .seat {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 60px;
     background-color: #c6dfc8;
     border-radius: 10px;
     display: flex;
@@ -52,10 +55,10 @@ body {
     margin-top: 10px;
     font-size: 1.2em;
 }
-/* From Uiverse.io by cssbuttons-io */ 
 button {
-    margin-top: 40px;
+    position: fixed;
 
+    bottom: 64px;
     padding: 1.3em 3em;
     font-size: 12px;
     text-transform: uppercase;
@@ -72,9 +75,9 @@ button {
   }
   
   button:hover {
-    background-color: #23c483;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-    color: #fff;
+    background-color: #ffffff;
+    box-shadow: 0px 15px 20px rgba(134, 134, 134, 0.4);
+    color: #000000;
     transform: translateY(-7px);
   }
   
@@ -83,7 +86,6 @@ button {
   }
   .icon-container {
     width: 120px;
-    /* 根据你的图标尺寸设置宽度 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,8 +100,6 @@ button {
     left: 0;
     bottom: 0;
     width: 100%;
-    /* background-color: #f5f5f5; */
-    /* 根据需要设置背景颜色 */
-    padding: 2px;
+    font-size: 12px;
     text-align: center;
   }

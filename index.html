@@ -1,56 +1,41 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>班级座位随机点名</title>
+    <title>幸运儿</title>
     <link rel="icon" href="favicon.png" type="image/png">
 
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* 隐藏原生的select样式 */
         select {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            padding: 8px;
-            border: 1px solid #999;
-            border-radius: 5px;
-            background-color: #f1f1f1;
-            color: #333;
-            font-size: 16px;
-            width: 60px;
+            position: fixed;
+            background: #fafdfe;
+            height: 28px;
+            width: 120px;
+            line-height: 28px;
+            border: 1px solid #9bc0dd;
+            border-radius: 2px;
+            left: 30px;
+            top: 30px;
         }
- 
-        /* 美化select的下拉箭头 */
-        select:after {
-            content: "\25BC"; /* Unicode编码，表示向下的箭头 */
-            position: absolute;
-            top: 12px;
-            right: 10px;
-        }
- 
-        /* 美化选项内容 */
-        option {
-            padding: 5px;
-            background-color: #f9f9f9;
-            color: #333;
-        }
- 
     </style>
 </head>
+
 <body>
+    <select id="random-count">
+        <option value="1">1个幸运儿</option>
+        <option value="2">2个幸运儿</option>
+        <option value="3">3个幸运儿</option>
+        <option value="4">4个幸运儿</option>
+        <option value="5">5个幸运儿</option>
+    </select>
     <div class="container">
-        <h1>班级座位随机点名</h1>   
-        <select id="random-count">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>        
+        <h1>幸运儿🤣</h1>
+
         <div id="results"></div>
-                <label for="random-count"></label>
+        <label for="random-count"></label>
 
         <div class="seat-group" id="left-group">
             <h2></h2>
@@ -68,10 +53,12 @@
 
     </div>
 
-        <button id="start-random">开始随机</button>    
-        <div class="footer">
-            <p>&#169; ZHUSHAOKUN</p>
-          </div>
+    <button id="start-random">谁是幸运儿？</button>
+
+    <div class="footer">
+        <p>&#169; ZHUSHAOKUN</p>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>

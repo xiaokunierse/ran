@@ -10,7 +10,7 @@ const createSeats = () => {
         for (let i = 1; i <= 18; i++) {
             const seat = document.createElement('div');
             seat.classList.add('seat');
-            // seat.textContent = `座位 ${i}`;
+            seat.textContent = `座位 ${i}`;
             group.appendChild(seat);
         }
     });
@@ -45,7 +45,7 @@ const randomSelect = () => {
     });
 
     // 显示结果
-    // resultsDiv.innerHTML = '随机结果: ' + selectedSeats.map(seat => seat.textContent).join(', ');
+    resultsDiv.innerHTML = '随机结果: ' + selectedSeats.map(seat => seat.textContent).join(', ');
 };
 
     startButton.addEventListener('click', () => {
